@@ -983,9 +983,11 @@ In output verrà creato il file `output.csv`.
 
 Se si vuole creare un file di output con nome diverso, si deve cancellare dal file di log la riga in cui si fa riferimento a `output.csv` e lanciare il comando:
 
-```
+```ß
 vd -y -b -p cancella_le_a.vd input_nuovo.csv -o output_nuovo.csv
 ```
+N.B. Registrando un flusso di lavoro è necessario evitare durante la registrazione di utilizzare valori per il loro posizionamento come riferimento.
+Riutilizzando la procedura con file sorgenti di dati diversi, le celle potrebbero presentare valori differenti e compromettere il flusso.
 
 [`torna su`](#indice)
 
